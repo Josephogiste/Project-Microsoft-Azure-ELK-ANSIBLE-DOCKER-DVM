@@ -2,7 +2,8 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![NETWORK DIAGRAM](https://drive.google.com/file/d/1lOcRS29I36vgu_3IKBkETj-CIRYN8bLw/view?usp=sharing)
+NETWORK DIAGRAM](https://drive.google.com/file/d/1lOcRS29I36vgu_3IKBkETj-CIRYN8bLw/view?usp=sharing)
+Format: ![Alt Text](url)
 
 These files have been tested and used to generate a live ELK deployment on Microsoft Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the file may be used to install only certain pieces of it, such as Filebeat.
 
