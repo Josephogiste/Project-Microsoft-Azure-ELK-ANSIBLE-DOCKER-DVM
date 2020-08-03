@@ -90,7 +90,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![sudo dokcer ps:https://drive.google.com/file/d/1SbEfSKr6ezePUDpfwTApVfVgyxXoDcTi/view?usp=sharing
+![](https://github.com/Josephogiste/Project-Microsoft-Azure-ELK-ANSIBLE-DOCKER-DVM/blob/master/sudo%20docker%20ps.jpg)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
