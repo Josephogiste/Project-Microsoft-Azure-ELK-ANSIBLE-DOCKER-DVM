@@ -71,7 +71,7 @@ A summary of the access policies in place can be found in the table below.
 | Jump Box | YES                   | Registered Private IP     |
 | WEB-1    | NO                    | Private IP,10.0.0.4       |
 | WEB-2    | NO                    | Private IP,10.0.0.4       |
-| ELK      | YES via.5601/9200/5044| 10.0.0.4/10.0.0.5/10.0.0.7|
+| ELK      | YES via port 5601     | 10.0.0.4/10.0.0.5/10.0.0.7|
 
 ### Elk Configuration
 
