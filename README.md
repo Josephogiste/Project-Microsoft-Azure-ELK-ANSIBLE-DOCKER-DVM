@@ -94,7 +94,7 @@ The following screenshot displays the result of running `docker ps` after succes
 
 To ensure the ELk server is running we try navigating to http://[ELK's Ip address:5601//app/kabana]
 
-1![]https://github.com/Josephogiste/Project-Microsoft-Azure-ELK-ANSIBLE-DOCKER-DVM/blob/master/kabana%20home%20page.jpg
+![]https://github.com/Josephogiste/Project-Microsoft-Azure-ELK-ANSIBLE-DOCKER-DVM/blob/master/kabana%20home%20page.jpg
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
