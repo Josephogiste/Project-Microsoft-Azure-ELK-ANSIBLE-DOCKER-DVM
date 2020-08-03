@@ -9,6 +9,9 @@ These files have been tested and used to generate a live ELK deployment on Micro
 dockerplaybook.yml
 [a link](https://github.com/Josephogiste/Project-Microsoft-Azure-ELK-ANSIBLE-DOCKER-DVM/blob/master/dockerplaybook.yml)
 
+filebeat-playbook.yml
+[a link](https://github.com/Josephogiste/Project-Microsoft-Azure-ELK-ANSIBLE-DOCKER-DVM/blob/master/filebeat-playbook.yml)
+
 This document contains the following details:
 - Description of the Topologu
 - Access Policies
