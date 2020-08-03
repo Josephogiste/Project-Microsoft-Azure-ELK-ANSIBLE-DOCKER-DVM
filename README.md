@@ -31,6 +31,7 @@ It also increases availability of applications and websites for users. Modern ap
 Load balancers rest on the layer 7 of the security OSI layers (Application layer)
 
 - What is the advantage of a jump box?
+  
   A Jumpbox allows users to connect into the virtual network from an external source gaining access to internal servers/networks via a private IP address.
   This protects both the user and the cooperation from attacks.
 
