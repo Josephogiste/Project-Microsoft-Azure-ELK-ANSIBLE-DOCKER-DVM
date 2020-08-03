@@ -31,15 +31,18 @@ It also increases availability of applications and websites for users. Modern ap
 Load balancers rest on the layer 7 of the security OSI layers (Application layer)
 
 - What is the advantage of a jump box?
-  
-  A Jumpbox allows users to connect into the virtual network from an external source gaining access to internal servers/networks via a private IP address.
+
+   A Jumpbox allows users to connect into the virtual network from an external source gaining access to internal servers/networks via a private IP address.
   This protects both the user and the cooperation from attacks.
 
-- Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
+- Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the  and system apllication.**********
+
 - What does Filebeat watch for?
+
   Filebeat is used for the monitoring of log files or locations that are specified and also collect log events and forward
   them to either Elasticsearch or Logstash for archive.
 - What does Metricbeat record?
+
   Metricbeat collects the metrics and statistics of operating systems and ships them to either Elasticsearch or Logstash.
   
 The configuration details of each machine may be found below.
@@ -97,13 +100,15 @@ WEB-1/10.0.0.5 and WEB-2/10.0.0.7
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the _____ file to _____.
-- Update the _____ file to include...
-- Run the playbook, and navigate to ____ to check that the installation worked as expected.
+- Copy the filebeat file to ansible container.
+- Update the ansible.config file to include the IP addreses of the VM's along with there classification (ELK and Webservers)
+- Run the playbook, and navigate to ELk container to check that the installation worked as expected.
 
 _TODO: Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? Where do you copy it?_
 - _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
 - _Which URL do you navigate to in order to check that the ELK server is running?
+
+To ensure the ELk server is running we try navigating to http://[ELK's Ip address:5601//app/kabana]
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
