@@ -13,7 +13,7 @@ filebeat-playbook.yml
 [a link](https://github.com/Josephogiste/Project-Microsoft-Azure-ELK-ANSIBLE-DOCKER-DVM/blob/master/filebeat-playbook.yml)
 
 This document contains the following details:
-- Description of the Topologu
+- Description of the Topology
 - Access Policies
 - ELK Configuration
   - Beats in Use
@@ -35,7 +35,7 @@ Load balancers rest on the layer 7 of the security OSI layers (Application layer
    A Jumpbox allows users to connect into the virtual network from an external source gaining access to internal servers/networks via a private IP address.
   This protects both the user and the cooperation from attacks.
 
-- Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the  and system apllication.**********
+- Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the file configurations and system apllication.
 
 - What does Filebeat watch for?
 
@@ -92,6 +92,10 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ![](https://github.com/Josephogiste/Project-Microsoft-Azure-ELK-ANSIBLE-DOCKER-DVM/blob/master/sudo%20docker%20ps.jpg)
 
+To ensure the ELk server is running we try navigating to http://[ELK's Ip address:5601//app/kabana]
+
+1![]https://github.com/Josephogiste/Project-Microsoft-Azure-ELK-ANSIBLE-DOCKER-DVM/blob/master/kabana%20home%20page.jpg
+
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
 WEB-1/10.0.0.5 and WEB-2/10.0.0.7
@@ -100,15 +104,8 @@ WEB-1/10.0.0.5 and WEB-2/10.0.0.7
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the filebeat file to ansible container.
-- Update the ansible.config file to include the IP addreses of the VM's along with there classification (ELK and Webservers)
-- Run the playbook, and navigate to ELk container to check that the installation worked as expected.
+- Copy the filebeat-configuration.yml file to files container.
+- Update the filebeat-config.yml file to include the IP addreses of the VM's along with there classification (ELK and Webservers)
+- Run the filebeat modules enable system followed by the filebeats setup command and the filbeat -e command
 
-_TODO: Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? Where do you copy it?_
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
-- _Which URL do you navigate to in order to check that the ELK server is running?
 
-To ensure the ELk server is running we try navigating to http://[ELK's Ip address:5601//app/kabana]
-
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
