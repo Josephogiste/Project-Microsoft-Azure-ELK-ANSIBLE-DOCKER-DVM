@@ -108,4 +108,9 @@ SSH into the control node and follow the steps below:
 - Update the filebeat-config.yml file to include the IP addreses of the VM's along with there classification (ELK and Webservers)
 - Run the filebeat modules enable system followed by the filebeats setup command and the filbeat -e command
 
+Which file do you update to make Ansible run the playbook on a specific machine?
+ The host file was updated.
+ 
+How do I specify which machine to install the ELK server on versus which to install Filebeat on?
+The roles file was updated.
 
